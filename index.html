@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agoodshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="Carrito.js" defer></script>
+    <script src="Product.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>agoodshop</h1>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product-header">
+                <span>Producto</span>
+                <span>Cantidad</span>
+                <span>Unidad</span>
+                <span>Total</span>
+            </div>
+            <template id="product-template">
+                <div class="product-row">
+                    <div class="product-info">
+                        <strong></strong><br>
+                        <span>Ref: </span>
+                    </div>
+                    <div class="product-quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="0">
+                        <button class="increment">+</button>
+                    </div>
+                    <div class="product-price"></div>
+                    <div class="product-total"></div>
+                </div>
+            </template>
+        </section>
+        <aside class="summary">
+            <h2>Total</h2>
+                <ul class="products-total">
+                    <template id="product-total-template">
+                        <li>
+                            <span></span> <strong></strong>
+                        </li>
+                    </template>
+                </ul>
+               <!-- TODO: Agregar el total de la orden -->
+        </aside>
+    </main>
+</body>
+</html>
